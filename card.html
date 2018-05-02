@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>电子就诊卡</title>
+    <script>
+        var html = document.querySelector("html");
+        if(html.offsetWidth>780){
+        var rem,oW = 780;
+        }else{
+        var rem,oW = html.offsetWidth;   
+        }
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+
+        var div = document.createElement("div");
+        div.style.width = "6.4rem";
+        html.appendChild(div);
+        var divoW = div.offsetWidth;
+
+        if(divoW!=oW){
+           rem = rem * oW/divoW;
+           html.style.fontSize = rem + "px";
+        }
+        html.removeChild(div);
+    </script>
+
+</head>
+<body>
+	<div class="card">
+		<div class="cardlist">
+			<div id="wrapper" style="width: 5rem;">
+				<div class="cardbox">
+					<dl>
+						<dt><img src="images/card.png"></dt>
+						<dd>
+							<img src="images/ma.png">
+							<p>400000000000000000</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/card.png"></dt>
+						<dd>
+							<img src="images/ma.png">
+							<p>400000000000000000</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/card.png"></dt>
+						<dd>
+							<img src="images/ma.png">
+							<p>400000000000000000</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/card.png"></dt>
+						<dd>
+							<img src="images/ma.png">
+							<p>400000000000000000</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/card.png"></dt>
+						<dd>
+							<img src="images/ma.png">
+							<p>400000000000000000</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/card.png"></dt>
+						<dd>
+							<img src="images/ma.png">
+							<p>400000000000000000</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="pagination">
+				<span class="on"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="card_content" >
+			<div class="cartit_list" >
+				<div class="cartit_show card_on" >
+					<div class="card_con fadeInUp">
+						<dl>
+							<dt><img src="images/tx.png"></dt>
+							<dd>
+								<h6>张斌</h6>
+								<p>100000000000</p>
+							</dd>
+						</dl>
+						<div class="recharge">
+							<a href="#">
+								<p>余额/充值<span>1000.00</span></p>
+								<i class="icon_next icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="codes zoomIn">
+						<img src="images/mas.png">
+					</div>
+				</div>
+				<div class="cartit_show" >
+					<div class="card_con fadeInUp">
+						<dl>
+							<dt><img src="images/tx.png"></dt>
+							<dd>
+								<h6>张斌</h6>
+								<p>200000000000</p>
+							</dd>
+						</dl>
+						<div class="recharge">
+							<a href="#">
+								<p>余额/充值<span>1000.00</span></p>
+								<i class="icon_next icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="codes zoomIn">
+						<img src="images/mas.png">
+					</div>
+				</div>
+				<div class="cartit_show" >
+					<div class="card_con fadeInUp">
+						<dl>
+							<dt><img src="images/tx.png"></dt>
+							<dd>
+								<h6>张斌</h6>
+								<p>300000000000</p>
+							</dd>
+						</dl>
+						<div class="recharge">
+							<a href="#">
+								<p>余额/充值<span>1000.00</span></p>
+								<i class="icon_next icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="codes zoomIn">
+						<img src="images/mas.png">
+					</div>
+				</div>
+				<div class="cartit_show" >
+					<div class="card_con fadeInUp">
+						<dl>
+							<dt><img src="images/tx.png"></dt>
+							<dd>
+								<h6>张斌</h6>
+								<p>400000000000</p>
+							</dd>
+						</dl>
+						<div class="recharge">
+							<a href="#">
+								<p>余额/充值<span>1000.00</span></p>
+								<i class="icon_next icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="codes zoomIn">
+						<img src="images/mas.png">
+					</div>
+				</div>
+				<div class="cartit_show" >
+					<div class="card_con fadeInUp">
+						<dl>
+							<dt><img src="images/tx.png"></dt>
+							<dd>
+								<h6>张斌</h6>
+								<p>500000000000</p>
+							</dd>
+						</dl>
+						<div class="recharge">
+							<a href="#">
+								<p>余额/充值<span>1000.00</span></p>
+								<i class="icon_next icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="codes zoomIn">
+						<img src="images/mas.png">
+					</div>
+				</div>	
+				<div class="cartit_show" >
+					<div class="card_con fadeInUp">
+						<dl>
+							<dt><img src="images/tx.png"></dt>
+							<dd>
+								<h6>张斌</h6>
+								<p>600000000000</p>
+							</dd>
+						</dl>
+						<div class="recharge">
+							<a href="#">
+								<p>余额/充值<span>1000.00</span></p>
+								<i class="icon_next icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="codes zoomIn">
+						<img src="images/mas.png">
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="cancel">注销就诊卡</div>
+	</div>
+	
+</body>
+<!-- 兼容谷歌 -->
+<script>window.PointerEvent = void 0</script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+	//判断左右滑动
+	$(document).ready(function(){
+		var sw=0;
+		var myScroll = new IScroll('#wrapper',{
+			scrollY: false,
+			scrollX: true,
+			snap: true,
+			momentum: false,
+			freeScroll: true,
+			// indicators: {
+	  //           el: document.getElementById('numon'),
+	  //           resize: false
+	           
+	  //      }
+		});	
+		myScroll.on('scrollEnd', function(){
+			sw=this.currentPage.pageX;
+			//alert(sw);
+			//console.log(sw)
+			$(".pagination span").eq(sw).addClass('on').siblings().removeClass('on');
+			$(".card_content .cartit_show").eq(sw).addClass('card_on').siblings().removeClass('card_on');
+		});
+	})
+</script>
+</html>

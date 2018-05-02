@@ -1,0 +1,236 @@
+@charset "UTF-8";
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul,li {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+    color: #595757
+}
+
+@media screen and (min-width: 600px) {
+    .icon {
+        transform:scale(1.3)
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .icon {
+        transform:scale(1.5)
+    }
+}
+
+a,button,input,p {
+    -webkit-tap-highlight-color: rgba(255,0,0,0)
+}
+
+a {
+    text-decoration: none
+}
+
+input{-webkit-tap-highlight-color:transparent;background:none;color: #333;border:0; font-size: 0.24rem}
+input:focus {outline:none;border:0;}
+
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+.clearfix{*zoom:1;}
+html,body{
+    height: 100%;
+   
+}
+html {
+    font-size: 100px;
+    color: #595757;
+    background: #F7F7F7;
+    position: relative;
+}
+
+body {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #595757;
+    font-size: .24rem;
+     width: 100%;
+    overflow: hidden;
+}
+/*icon 如果添加icon，请不要改变宽度，往下添加*/
+.icon{display:inline-block; background-image:url(../images/icon.png); background-size:2.54rem auto;   }
+.icon_next{width:0.16rem; height:0.22rem; background-position:  0 0; }
+.icon_add{width:0.21rem; height:0.21rem; background-position:  -2.33rem -0.01rem; }
+.icon_choice_t{width:0.33rem; height:0.32rem; background-position:  -0.69rem 0; }
+.icon_choice_f{width:0.33rem; height:0.32rem; background-position:  -1.48rem 0; }
+
+/*选择就诊卡*/
+.choice{font-size: 0.24rem; }
+.choice_li ul{}
+.choice_li ul li{padding-left: 0.24rem; width: 6.2rem;  height: 0.76rem; margin-bottom: 0.16rem; background: #fff; position: relative;}
+.choice_li ul li h6{ line-height: 0.36rem; padding-top: 0.08rem;  }
+.choice_li ul li p{ font-size: 0.24rem; }
+.choice_li ul li i{ position: absolute; right:0.24rem; top:0.27rem;}
+.choice .other{ width: 100%;  height: 0.76rem; margin-bottom: 0.5rem; background: #fff; position: relative;}
+.choice .other a{ display: block; padding-left: 0.60rem;  width: 5.84rem;}
+.choice .other p{line-height: 0.76rem; color: #9E9F9F;}
+.choice .other b{ position: absolute; right: 0.24rem; top: 0;color: #9E9F9F; width:3rem; text-align: right; height: 0.76rem; line-height: 0.76rem; }
+.choice .other i{ position: absolute; left: 0.24rem; top: 0.28rem; }
+.prompt{ margin-top: 0.5rem; color: #9E9F9F; padding-left: 0.24rem; }
+.prompt p{ line-height: 0.38rem; }
+.prompt h4{ padding-bottom: 0.08rem; }
+
+/*添加就诊卡*/
+.add_li ul{ padding-left: 0.24rem; padding-right: 0.24rem; background: #fff; }
+.add_li ul li{ height: 0.76rem; line-height: 0.78rem; position: relative; border-bottom: 1px solid #C7C6CB }
+.add_li ul li:last-child{ border: 0; }
+.add_li ul li h6{ width: 1.6rem; text-align: left; }
+.add_li ul li input{position: absolute; text-align: right; /*border-left: 1px solid #cecece;*/ right: 0; text-align: left; top: 0.16rem;  height: 0.44rem; line-height: 0.44rem; width:4.6rem; overflow: hidden; }
+.add_li ul li p{ position: absolute; right: 0; text-align: right;width:4.6rem; top: 0; }
+.add_li ul li.sexlist p span{ display: inline-block;  padding-right: 0.24rem; padding-left: 0.57rem; position:relative; }
+.add_li ul li.sexlist p span:last-child{ padding-right: 0; }
+.add_li ul li.sexlist p i{ position: absolute; left: 0; top:0.24rem; width:0.33rem; height:0.32rem; background-position:  -1.48rem 0;}
+.add_li ul li.sexlist p span.on i{width:0.33rem; height:0.32rem; background-position:  -0.69rem 0; }
+
+.add_li ul li.codelist input{ width: 2.6rem;  right: 2rem } 
+.add_li ul li.codelist p{ position: absolute; top: 0.08rem; text-align: center; line-height: 0.6rem; width: 2rem; height: 0.6rem; color: #fff;background: #00B1B5; }
+.add_li .submit{ width: 5.92rem; height: 0.6rem; text-align: center; line-height: 0.6rem;color: #fff;background: #00B1B5; margin: 0.5rem auto; }
+.popup{ display: none; position: absolute; z-index:2;left: 0; right: 0;top: 0;bottom: 0;background: rgba(0,0,0,0.5); }
+.popup .popup_content{ width: 5rem; height: 2.5rem; background: #fff; position: absolute;left: 50%; top: 50%;transform: translate(-50%, -50%); }
+.popup .popup_content p{ padding-top: 0.5rem; font-size: 0.26rem; text-align: center; }
+.popup .popup_content a{ text-align: center; margin: 0.5rem auto 0 auto; display: block; width: 2rem;height: 0.6rem; line-height: 0.6rem; font-size: 0.26rem; color: #fff; background: #00B1B5;}
+
+/*就诊卡列表*/
+.card{ padding-top: 0.16rem; position: relative; }
+.cardlist{ width: 6.4rem; height: 3.5rem; overflow: hidden;  }
+.cardlist .cardbox { width:30rem; height: 3rem; margin-left: 0.95rem;}
+.cardlist .cardbox dl{ width:4.5rem; float: left; overflow: hidden; margin-right: 0.5rem;}
+.cardlist .cardbox dl dt{ width: 4.5rem; height: 2.87rem; }
+.cardlist .cardbox dl dt img{ width: 100%; }
+.cardlist .cardbox dl dd{ display: none; width: 4.5rem; margin-top: 0.16rem; height: 1.06rem; background: #fff; position: relative; }
+.cardlist .cardbox dl dd img{ width: 100%; }
+.cardlist .cardbox dl dd p{ position: absolute; left: 0;bottom: 0.06rem; width: 100%; text-align: center;  }
+.pagination{overflow: hidden; height: 0.5rem; line-height: 0.5rem; text-align: center; }
+.pagination span{ width:0.1rem; height: 0.1rem; border-radius: 0.1rem; background:#9E9F9F; display: inline-block; margin:0 0.04rem; }
+.pagination span.on{ background: #595757; }
+.card_content{ width:6.4rem; height: 5.1rem; overflow: hidden;  position: relative;}
+.card_content .cartit_list{ width: 6.4rem; height: 5.1rem; position: relative;}
+.card_content .cartit_show{ overflow: hidden; display: none; width: 6.4rem;height: 5.1rem;  position: absolute; top: 0  }
+.card_content .card_on{ display: block; }
+.card_content .card_con{ width: 6.4rem; height: 1rem; overflow: hidden; background: #fff; }
+.card_content .cartit_show dl{ width: 3.2rem; overflow: hidden; height: 1rem; position: relative; float: left;}
+.card_content .cartit_show dl:before{content: ""; position: absolute; height: 0.6rem; width: 0.01rem; background:#ccc; top: 0.2rem; left: 3.18rem; }
+.card_content .cartit_show dl dt{ width: 0.8rem; height:0.8rem; float: left; margin-left: 0.24rem; margin-top: 0.1rem; }
+.card_content .cartit_show dl dt img{ width: 100%; }
+.card_content .cartit_show dl dd{ width: 1.92rem; float: right; line-height: 0.36rem; padding-top: 0.14rem; }
+.card_content .cartit_show .recharge{ width: 3.2rem; float: right; }
+.card_content .cartit_show .recharge a{ display: block; position: relative; padding-right: 0.66rem; height: 0.72rem; padding-top: 0.14rem; padding-bottom: 0.14rem; text-align: right; text-align: right; } 
+.card_content .cartit_show .recharge p{ line-height:0.36rem; } 
+.card_content .cartit_show .recharge p span{ display: block; }
+.card_content .cartit_show .recharge i{ position: absolute; right: 0.25rem; top: 0.38rem; }
+.card .cancel{width: 5.92rem; height: 0.6rem; text-align: center; line-height: 0.6rem;color: #fff;background: #00B1B5; margin: 0.5rem auto;}
+.codes{ width: 3.6rem;  height: 3.6rem; margin: 0 auto; margin-top: 0.5rem; }
+.codes img{ width: 100%; }
+/*动画*/
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: .6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        -ms-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3)
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: .6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+

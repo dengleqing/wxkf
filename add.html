@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <link rel="stylesheet" href="css/style.css">
+    <title>添加就诊卡</title>
+    <script>
+        var html = document.querySelector("html");
+        if(html.offsetWidth>780){
+        var rem,oW = 780;
+        }else{
+        var rem,oW = html.offsetWidth;   
+        }
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+
+        var div = document.createElement("div");
+        div.style.width = "6.4rem";
+        html.appendChild(div);
+        var divoW = div.offsetWidth;
+
+        if(divoW!=oW){
+           rem = rem * oW/divoW;
+           html.style.fontSize = rem + "px";
+        }
+        html.removeChild(div);
+    </script>
+
+</head>
+<body>
+	<div class="add">
+		<div class="add_li">
+			<ul>
+				<li>
+					<h6>姓名：</h6><input type="text" name="name" id="name"></input>
+				</li>
+				<li class="sexlist">
+					<h6>性别：</h6>
+					<p><span data-value="0"><i class="icon_choice_t icon"></i>男</span>
+					   <span data-value="1"><i class="icon_choice_f icon"></i>女</span>
+					</p>
+				</li>
+				<li>
+					<h6>出生年月：</h6><input type="data" name="password" id="name"></input>
+				</li>
+				<li>
+					<h6>身份证：</h6><input type="number" name="name" id="name"></input>
+				</li>
+				<li>
+					<h6>密码：</h6><input type="text" name="name" id="name"></input>
+				</li>
+				
+				<li class="codelist">
+					<h6>验证码：</h6><input type="number" name="code" id="code"></input>
+					<p class="gets">获取验证码</p>
+				</li>
+			</ul>
+			<p class="submit">确认申请</p>
+		</div>
+	</div>
+	<div class="popup">
+		<div class="popup_content">
+			<p>办卡成功，请领取您的电子就诊卡</p>
+			<a href="#">确定</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".sexlist p span").on("click", function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		})
+	})
+</script>
+</html>

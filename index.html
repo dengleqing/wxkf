@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>选择就诊卡</title>
+    <script>
+        var html = document.querySelector("html");
+        if(html.offsetWidth>780){
+        var rem,oW = 780;
+        }else{
+        var rem,oW = html.offsetWidth;   
+        }
+        rem = oW>=640?100:oW/6.4;
+        html.style.fontSize = rem + "px";
+
+        var div = document.createElement("div");
+        div.style.width = "6.4rem";
+        html.appendChild(div);
+        var divoW = div.offsetWidth;
+
+        if(divoW!=oW){
+           rem = rem * oW/divoW;
+           html.style.fontSize = rem + "px";
+        }
+        html.removeChild(div);
+    </script>
+
+</head>
+<body>
+	<div class="choice">
+		<div class="choice_li">
+			<ul>
+				<li>
+					<h6>张斌</h6>
+					<p>4401000011185365</p>
+					<i class="icon icon_next"></i>
+				</li>
+				<li>
+					<h6>张斌</h6>
+					<p>4401000011185365</p>
+					<i class="icon icon_next"></i>
+				</li>
+			</ul>
+			<div class="other">
+				<a href="#">
+					<i class="icon icon_add"></i>
+					<p>添加就诊人</p>
+					<b>你还可以申请<span>3</span>张</b>
+				</a>
+			</div>
+		</div>
+		<div class="prompt">
+		<h4>提示</h4>
+		<p>1个微信号可以办理5张就诊卡<br/>
+			1个身份证号只能办理1张就诊卡<br/>
+			就诊卡注销后，可办理新就诊卡</p>
+			
+		</div>
+	</div>
+</body>
+</html>
